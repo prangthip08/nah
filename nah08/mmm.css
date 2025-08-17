@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Main Menu</title>
+  <link rel="stylesheet" href="cat.css">
+</head>
+<body>
+  <div class="container">
+    <a href="home.html" class="button home">HOME</a>
+    <a href="contact.html" class="button contact">CONTACT</a>
+    <a href="profile.html" class="button profile">PROFILE</a>
+    <a href="future.html" class="button future">FUTURE PLANS</a>
+    <a href="education.html" class="button education">EDUCATION</a>
+  </div>
+</body>
+</html>
+
+body {
+  background: linear-gradient(to bottom right, #fbc2eb, #fcd2e4);
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 30px;
+}
+
+.button {
+  padding: 25px 50px;
+  border-radius: 60px;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+  color: black;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  transition: transform 0.2s;
+}
+
+.button:hover {
+  transform: scale(1.1);
+}
+
+.home {
+  background-color: #bfa9f2;
+}
+
+.contact {
+  background-color: #f4a5a5;
+}
+
+.profile {
+  background-color: #a6edfa;
+}
+
+.future {
+  background-color: #b6f2b5;
+}
+
+.education {
+  background-color: #a7c9f7;
+}
+
+/* Optional: Add decorative elements like bows, stars, and balloons with images or emojis */
+.home::before {
+  content: "🎀";
+  position: absolute;
+  top: -20px;
+  left: -25px;
+  font-size: 30px;
+}
+
+.profile::before {
+  content: "⭐";
+  position: absolute;
+  top: -15px;
+  left: -25px;
+  font-size: 30px;
+}
+
+.education::after {
+  content: "🎈🎈";
+  position: absolute;
+  bottom: -25px;
+  right: -15px;
+  font-size: 25px;
+}
